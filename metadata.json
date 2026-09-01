@@ -1,0 +1,8 @@
+{
+  "name": "MDL - Media Downloader",
+  "description": "A high-performance media downloader and gallery app with active transfer management, format selector, and media playback.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

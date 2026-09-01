@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Hanken Grotesk', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  [dir="rtl"] {
+    font-family: 'Tajawal', 'Hanken Grotesk', system-ui, sans-serif;
+  }
+}
+
+.glass-card {
+  background: rgba(23, 31, 51, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-card-subtle {
+  background: rgba(19, 27, 46, 0.6);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.progress-gradient {
+  background: linear-gradient(90deg, #4f46e5 0%, #3b82f6 100%);
+}
+
+.progress-gradient-cyan {
+  background: linear-gradient(90deg, #4f46e5 0%, #06b6d4 100%);
+}
+
+/* Shimmer animation for active transfers */
+@keyframes shimmer {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+.animate-shimmer {
+  animation: shimmer 2s infinite linear;
+}
